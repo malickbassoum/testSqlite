@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         scoreView = (TextView) findViewById(R.id.scoreView);
         databaseManager= new DatabaseManager(this);
 
-//        databaseManager.insertScore("malick", 1000);
-//        databaseManager.insertScore("daff", 9000);
-//        databaseManager.insertScore("max", 7000);
-//        databaseManager.insertScore("jules", 500);
-//        databaseManager.insertScore("ramata", 3400);
+        databaseManager.insertScore("malick", 1000);
+        databaseManager.insertScore("daff", 9000);
+        databaseManager.insertScore("max", 7000);
+        databaseManager.insertScore("jules", 500);
+        databaseManager.insertScore("ramata", 3400);
 
         List<ScoreData> scores=databaseManager.readTop10();
         for (ScoreData score : scores){
